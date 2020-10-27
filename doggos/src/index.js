@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 import './styles.css';
 
@@ -11,9 +12,11 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log('CDM');
-    fetch('https://dog.ceo/api/breed/husky/images')
-      .then(res => res.json())
-      .then(dogs => this.setState({ doggos: dogs.message }))
+    axios.get('https://dog.ceo/api/breed/husky/images')
+      .then(resp => {
+        console.log(resp);
+        this.setState({ doggos: resp.data.message })
+      })
       .catch(err => console.log('noooo'));
   }
 
