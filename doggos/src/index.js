@@ -7,12 +7,12 @@ import './styles.css';
 class App extends React.Component {
   state = {
     doggos: [],
-    doggoText: ''
+    doggoText: 'husky'
   };
 
   componentDidMount() {
     console.log('CDM');
-    axios.get('https://dog.ceo/api/breed/husky/images')
+    axios.get(`https://dog.ceo/api/breed/husky/images`)
       .then(resp => {
         console.log(resp);
         this.setState({ doggos: resp.data.message })
