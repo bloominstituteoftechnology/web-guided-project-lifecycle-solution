@@ -173,6 +173,17 @@ These are the questions used internally to check student understanding. Students
 * [https://github.com/LambdaSchool/React-Github-User-Card](https://github.com/LambdaSchool/React-Github-User-Card)
 
 ## Breakout Slack Messages
+Form Construction Breakout Instructions:
+*********************************************************
+1. Open index.js.
+2. Add HTML search form.
+3. Add in state to App.js hold form input text.
+4. Add onChange event flow to trigger needed to update state.
+4. Add onSubmit event flow to trigger the display of the inputText state to the console.
+
+Feel free to make use of our review materials or any other reference to help you.
+
+You have 10mins to complete this task. Good luck!
 
 ----
 
