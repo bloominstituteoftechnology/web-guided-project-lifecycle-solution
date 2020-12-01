@@ -143,7 +143,7 @@ These are the questions used internally to check student understanding. Students
 * Set State for dogs
 * Add console.logs to show render path.
 
-### Display dog items
+### Display API call results
 * Add in map on dogs that allows for display of images.
 * Add in fixed width to make it easier to see.
 
@@ -155,10 +155,9 @@ These are the questions used internally to check student understanding. Students
     * Add in onSubmit
     * Add in state for holding the the input value
     * **Breakout groups for form creation.**
+    * Review breakout code
 
-### Review and add code
-
-### Adding api call
+### Adding API Call for search
 * Show that we can use a variable to pass in breed to api call.
 * Discuss the value of making service code seperate (seperation of concerns)
 * make seperate fetchDogs method and use everywhere.
