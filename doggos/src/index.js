@@ -4,20 +4,28 @@ import axios from 'axios';
 
 import './styles.css';
 
+const fetchDogs = (breed) => {
+  return axios.get(`https://dog.ceo/api/breed/${breed}/images`)
+  .then(resp => {
+    return(resp);
+  })
+  .catch(err => console.log('noooo'));
+}
+
 class App extends React.Component {
   state = {
     doggos: [],
     doggoText: 'husky'
-  };
+  }
 
   componentDidMount() {
     console.log('CDM');
-    axios.get(`https://dog.ceo/api/breed/husky/images`)
+    fetchDogs('husky')
       .then(resp => {
-        console.log(resp);
-        this.setState({ doggos: resp.data.message })
+        this.setState({
+          doggos: resp.data.message
+        });
       })
-      .catch(err => console.log('noooo'));
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -26,16 +34,13 @@ class App extends React.Component {
       console.log('doggos have changed');
       if (this.state.doggoText === 'chihuahua') {
         console.log('ewwww its a chihuahua...');
-        fetch(`https://dog.ceo/api/breed/husky/images`)
-          .then(res => res.json())
-          .then(dogs =>
+        fetchDogs("husky")
+          .then(resp => {
             this.setState({
-              doggos: dogs.message,
-              doggoText: 'husky'
-            })
-          )
-          .catch(err => console.log('noooo'));
-      }
+              doggos: resp.data.message
+            });
+          })
+        }
     }
   }
 
@@ -45,14 +50,12 @@ class App extends React.Component {
 
   fetchDoggos = e => {
     e.preventDefault();
-    fetch(`https://dog.ceo/api/breed/${this.state.doggoText}/images`)
-      .then(res => res.json())
-      .then(dogs =>
+    fetchDogs(this.state.doggoText)
+      .then(resp => {
         this.setState({
-          doggos: dogs.message
-        })
-      )
-      .catch(err => console.log('noooo'));
+          doggos: resp.data.message
+        });
+      })
   };
 
   render() {
