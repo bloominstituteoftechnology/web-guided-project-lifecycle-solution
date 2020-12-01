@@ -77,7 +77,7 @@ These are the questions used internally to check student understanding. Students
 ### Introduce Module
 * In the previous lesson we mapped out the basic functioning of a component.
 * There is one more feature that we did not include and that is whatever useEffect does.
-* That is lifecycle
+* Define React Lifecycle.
 
 ### Open Review Code
 * Open review code.
