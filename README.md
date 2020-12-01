@@ -22,25 +22,25 @@ By the end of this module, learners should be able to:
 ----
 
 ## Guided Project Slack Message
-> 1. Clone without forking the following repo: https://github.com/LambdaSchool/web-guided-project-lifecycle
-> 2. Navigate into both the review and followAlong folders and run npm i to load dependences.
->
-> :point_right: Technical issues spinning up the project? Please head over to the help channel!
-> :point_right: If you fall behind during lecture and wish to catch up:
->
-> git fetch && git reset --hard origin/lecture
->
-> :point_right: Slido event: *insert slido link*
+1. Clone without forking the following repo: https://github.com/LambdaSchool/web-guided-project-lifecycle
+2. Navigate into both the review and followAlong folders and run npm i to load dependences.
+
+:point_right: Technical issues spinning up the project? Please head over to the help channel!
+:point_right: If you fall behind during lecture and wish to catch up:
+
+git fetch && git reset --hard origin/lecture
+
+:point_right: Slido event: *insert slido link*
 
 ----
 
 ## Guided Project Zoom Invitation:
-> Unit 3 | Sprint 1 | **Module 1: React Lifecycle**
-> _______________________________________________________
-> Zoom Link : *insert zoom link*
-> Slido: *insert slido link*
-> Guided Project: https://github.com/LambdaSchool/web-guided-project-lifecycle
-> Module Project: https://github.com/LambdaSchool/React-Github-User-Card
+Unit 3 | Sprint 1 | **Module 1: React Lifecycle**
+_______________________________________________________
+Zoom Link : *insert zoom link*
+Slido: *insert slido link*
+Guided Project: https://github.com/LambdaSchool/web-guided-project-lifecycle
+Module Project: https://github.com/LambdaSchool/React-Github-User-Card
 
 ----
 
@@ -74,132 +74,100 @@ These are the questions used internally to check student understanding. Students
 
 ## Guided Project Outline
 
-## Lifecycle Methods Chart
-http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+### Introduce Module
+* In the previous lesson we mapped out the basic functioning of a component.
+* There is one more feature that we did not include and that is whatever useEffect does.
+* That is lifecycle
 
-## Pokemon (cont.)
-Starting Sangbox: https://codesandbox.io/s/n3o80olx5m
-Solution Sangbox: https://codesandbox.io/s/k0804z52p5
+### Open Review Code
+* Open review code.
+* Discuss what useEffect does.
+* Add in console.logs
+* Discuss when different console.logs excecute.
+* Highlight that there are different paths of execution.
+* Build a flowchart showing the progression of code for mount.
+* Build a flowchart showing progression of code for update.
 
-1. In `App.js`, add a console.log in the constructor that logs "constructor running".
-Show this being logged in the console.
-2. Add a console.log in the `render` function that logs "render running". Show the
-console.
-3. Go to `Pokemon.js`, and add a console.log in the component, above the return. Show
-the console. You should see these three logs in sequential order. 
-4. Add a `componentDidMount` function in `App.js`. Explain that this is where we will
-eventual set data to state from an API call, but explain that for this app, we will just
-set our data we;ve imported to state, and pretend it's coming from an API.
-  - In the state object, set the pokemon property to and empty array - `pokemon: []`
-  - In componentDidMount, set the data to state - `this.setState({ pokemon: data })`
-5. Add a console.log in the CDM (componentDidMount) function that log "CDM running". Show
-the console.
-6. Notice that render and Pokemon.js logged again. That's because we are setting state in
-CDM. A setState call triggers a re-render for that component, and those logs run again. 
-You can refresh at this point, and walk through the whole process, one log at a time.
-7. Add a `componentDidUpdate` function. This takes in `prevProps` and `prevState` 
-(the previous props and previous state before the new data came in). We can watch for our
-data to change on state and props with this lifecycle method. Add an `if` statement
-to watch for the `pokemon` property on state to change. Add a console.log inside the
-if statement to indicate that we get into the if statement.
-8. Add an erroneous if state (something like prevProps.userID !== this.props.userID) to
-explain that this block will never run because props.userID will never change in this 
-particular app. But if we had a userID prop, we could use this if block to watch for
-userID to change, then run an API call to fetch the user with that userID once it is 
-passed in as a prop.
+### Lifecycle Methods
+* Highlight that lifecycle methods are the base building blocks controlling this type of code.
+* Highlight that injecting code into parts of the lifecycle of a component is a key part of React.
+* Open diagram of lifecycle (here)[https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/]
+* Highlight Mounting, Update, and Unmounting phases.
 
-## Earthquake
-Sandbox: https://codesandbox.io/s/ry6p8j7qq4
+### Build Class Based Lifecycle
+* Return to review code.
+* Add console.logs for state build and render.
+* Add componentDidMount
+* Add componentDidUpdate
+* Add prevProps, PrevState arguments.
+* Show that we have a similar update path.
+* Compare apps.
 
-9. Open to `App.js` - It is rendering an `EarthquakesContainer` component
-10. Open `EarthquakesContainer.js`. Things to look at:
-  - No constructor 🤯. It's okay, we don't _need_ to have a constructor if we only have
-state in the constructor
-  - CDM is fetching initial data, and setting it to state (Don't worry about the syntax
-for fetching data, like the .then(). We'll learn that next week.)
-  - Render Function is rendering a `EarthquakesMap` component
-11. Open `EarthquakesMap.js`. Let's look at `componentDidUpdate` here:
-  - It is checking for the data in `this.props.quakes` to change
-  - When that data changes, it runs the `loadMap` function
-  - In the app, click on the two date dropdowns on the left, and choose dates for the
-last week. Click the button. Notice how the map reloads? That's because clicking the 
-button fetched new data, which changes the data on `this.props.quakes` which will run
-the `loadMap` function, which reloads the map. Pretty awesome!
+### Break
 
+### Show Lifecycle Methods is context
+* Open Pokemon application
+* Review Code
+* Add in componentDidMount
+* Add componentDidUpdate(prevProps, prevState)
 
-## Build the dogs app
-Solution sandbox: https://codesandbox.io/s/r5w7r2lr1o
+### Show how nested components are called
+* Add rendering console to pokemon
+* Ask students what will be displayed
+* Highlight that subcomponents will be rendered before parent components are completely mounted.
 
-12. Open a new sandbox
-13. Change `App` to a class component. 
-14. Add a `state` object without the constructor:
+### Using componentDidMount with async calls
+* Return to index.js
+* Note that data is being added directly to the component.
+* Ask about the use of useEffect previously (api calls)
+* Note ComponentDidMount does the same.
+* Add empty array to state to demonstrate this and setTimeout within componentDidMount.
 
-```javascript
-state = {
-  doggos: [],
-};
-```
+### Highlight the uselessness of the constructor
+* Show the new way of assigning state without the constructor.
 
-15. Add a CDM function, and inside it, fetch data from the dogs API. Give this code to 
-the students, since we haven't covered fetching data yet.
+### Break
 
-```javascript
-fetch('https://dog.ceo/api/breed/husky/images')
-  .then(res => res.json())
-  .then(dogs => this.setState({ doggos: dogs.message }))
-  .catch(err => console.log('noooo'));
-```
+### Building an app using componentDidMount and componentDidUpdate
+* Open Doggos Solution
+* Show that we can get any dog breed we want
+* Show that when we try to get chihuahua we get husky instead.
+* Show https://dog.ceo/dog-api
+* Note that we will be building this app from the ground up.
 
-16. Display the doggos from state:
+### Build basic HTML and state
+* Build App class component
+* Discuss the need for state within our original app.
+* Build out the axios call of our dog api in componentDidMount.
+* Note the response is a list of links to images
+* Set State for dogs
+* Add console.logs to show render path.
 
-```javascript
-render() {
-  return (
-    <div className="App">
-      <h1>Hello Doggos</h1>
-      <div className="doggos">
-        {this.state.doggos.map(doggo => (
-          <img width="200" src={doggo} key={doggo} alt={doggo} />
-        ))}
-      </div>
-    </div>
-  );
-}
-```
+### Display dog items
+* Add in map on dogs that allows for display of images.
+* Add in fixed width to make it easier to see.
 
-#### If extra time - build out CDU
-17. Add the property 'doggosText' to the state object
-18. Add a form to the render
+### Adding search form
+* Discuss the need to add in a form.
+* Map out form needs:
+    * Add HTML
+    * Add in onChange
+    * Add in onSubmit
+    * Add in state for holding the the input value
+#### Breakout groups for form creation.
 
-```javascript
-render() {
-  console.log('rendering');
-  return (
-    <div className="App">
-      <h1>Hello Doggos</h1>
-      <input
-        type="text"
-        value={this.state.doggoText}
-        onChange={this.handleChanges}
-      />
-      <button onClick={this.fetchDoggos}>Fetch doggos</button>
-      <div className="doggos">
-        {this.state.doggos.map(doggo => (
-          <img width="200" src={doggo} key={doggo} alt={doggo} />
-        ))}
-      </div>
-    </div>
-  );
-}
-```
+### Review and add code
 
-19. Add the handleChanges function for the input
-20. Add a `fetchDoggos` function for the button (See solution sandbox - backticks break
-this notes page because it's written in markdown...)
-21. Notice that in the function, we are setting state. Which will run CDU and render
-22. Add the CDU function, and check to see if what was typed in was a 'chihuahua'. If so
-refetch the data for husky (See solution again for this function)
+### Adding api call
+* Show that we can use a variable to pass in breed to api call.
+* Discuss the value of making service code seperate (seperation of concerns)
+* make seperate fetchDogs method and use everywhere.
 
+### Using componentDidUpdate / Filtering for chihuahua
+* Note the functioning of two properties in componentDidUpdate
+* Note that we can catch if state changes explicitly
+* Note that we can catch if new state is something sepecific
+* Make a new call if chihuahua is the state.
 
 ### Module Project Review
 * [https://github.com/LambdaSchool/React-Github-User-Card](https://github.com/LambdaSchool/React-Github-User-Card)
@@ -214,6 +182,7 @@ A reminder if that office hours are from 3:30 - 4:30 Lambda Time. Don't forget t
 
 Module Project
 [Class Component React Github User Card](https://github.com/LambdaSchool/React-Github-User-Card)
+[Class Slides](https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing)
 
 Here is a review of today's material.
 
