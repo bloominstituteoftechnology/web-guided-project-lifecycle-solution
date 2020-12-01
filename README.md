@@ -178,16 +178,18 @@ These are the questions used internally to check student understanding. Students
 
 ## After Class Message
 Hope you all enjoyed today's guided Lesson!
-A reminder if that office hours are from 3:30 - 4:30 Lambda Time. Don't forget to complete the days Check for Understanding and Pulse Checks! 
+A reminder if that office hours are from 2:30 - 3:30 Lambda Time. Don't forget to complete the days Check for Understanding and Pulse Checks!
 
 Module Project
-[Class Component React Github User Card](https://github.com/LambdaSchool/React-Github-User-Card)
-[Class Slides](https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing)
+Class Component React Github User Card : https://github.com/LambdaSchool/React-Github-User-Card)
+Class Slides : https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing
 
 Here is a review of today's material.
 
 Key Terminology
-* 📝 *term* - [description](#)
+* 📝 *ComponentDidMount* - [The React.Component derived method that is triggered after a component initially mounts.](#)
+* 📝 *ComponentDidUpdate* - [The React.Component derived method that is triggered any time a component update props or state.](#)
+* 📝 *ComponentWillUnmount* - [The React.Component derived method that is triggered when a component is removed from the DOM.](#)
 
 Key Concepts
-* 📝 *concept* - [description](#)
+* 📝 *React Lifecycle* - [The overall flow of code execution throughout the birth, operationing and death of a React component.](#)
