@@ -123,7 +123,7 @@ These are the questions used internally to check student understanding. Students
 * Note ComponentDidMount does the same.
 * Add empty array to state to demonstrate this and setTimeout within componentDidMount.
 
-### Highlight the uselessness of the constructor
+### Highlight state setup without the constructor
 * Show the new way of assigning state without the constructor.
 
 ### Break
