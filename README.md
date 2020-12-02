@@ -2,6 +2,8 @@
 
 ## [Training Kit](https://github.com/LambdaSchool/Full-Stack-Web-Curriculum/tree/main/03-WebApplications-II/Sprint%2001%20-%20Advanced%20React/Module%202%20-%20The%20React%20Lifecycle)
 
+### [Previous Lesson Plan] (https://github.com/LambdaSchool/Web-ComponentLifecycle-GuidedProject)
+
 ----
 
 ## Objectives
@@ -74,12 +76,12 @@ These are the questions used internally to check student understanding. Students
 
 ## Guided Project Outline
 
-### Introduce Module
+### Introduce Module:
 * In the previous lesson we mapped out the basic functioning of a component.
 * There is one more feature that we did not include and that is whatever useEffect does.
 * Define React Lifecycle.
 
-### Open Review Code
+### Open Review Code:
 * Open review code.
 * Discuss what useEffect does.
 * Add in console.logs
@@ -88,13 +90,13 @@ These are the questions used internally to check student understanding. Students
 * Build a flowchart showing the progression of code for mount.
 * Build a flowchart showing progression of code for update.
 
-### Lifecycle Methods
+### Lifecycle Methods:
 * Highlight that lifecycle methods are the base building blocks controlling this type of code.
 * Highlight that injecting code into parts of the lifecycle of a component is a key part of React.
 * Open diagram of lifecycle (here)[https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/]
 * Highlight Mounting, Update, and Unmounting phases.
 
-### Build Class Based Lifecycle
+### Build Class Based Lifecycle:
 * Return to review code.
 * Add console.logs for state build and render.
 * Add componentDidMount
@@ -105,37 +107,37 @@ These are the questions used internally to check student understanding. Students
 
 ### Break
 
-### Show Lifecycle Methods is context
+### Show Lifecycle Methods is context:
 * Open Pokemon application
 * Review Code
 * Add in componentDidMount
 * Add componentDidUpdate(prevProps, prevState)
 
-### Show how nested components are called
+### Show how nested components are called:
 * Add rendering console to pokemon
 * Ask students what will be displayed
 * Highlight that subcomponents will be rendered before parent components are completely mounted.
 
-### Using componentDidMount with async calls
+### Using componentDidMount with async calls:
 * Return to index.js
 * Note that data is being added directly to the component.
 * Ask about the use of useEffect previously (api calls)
 * Note ComponentDidMount does the same.
 * Add empty array to state to demonstrate this and setTimeout within componentDidMount.
 
-### Highlight state setup without the constructor
+### Highlight state setup without the constructor:
 * Show the new way of assigning state without the constructor.
 
 ### Break
 
-### Building an app using componentDidMount and componentDidUpdate
+### Building an app using componentDidMount and componentDidUpdate:
 * Open Doggos Solution
 * Show that we can get any dog breed we want
 * Show that when we try to get chihuahua we get husky instead.
 * Show https://dog.ceo/dog-api
 * Note that we will be building this app from the ground up.
 
-### Build basic HTML and state
+### Build basic HTML and state:
 * Build App class component
 * Discuss the need for state within our original app.
 * Build out the axios call of our dog api in componentDidMount.
@@ -143,11 +145,11 @@ These are the questions used internally to check student understanding. Students
 * Set State for dogs
 * Add console.logs to show render path.
 
-### Display API call results
+### Display API call results:
 * Add in map on dogs that allows for display of images.
 * Add in fixed width to make it easier to see.
 
-### Adding search form
+### Adding search form:
 * Discuss the need to add in a form.
 * Map out form needs:
     * Add HTML
@@ -157,12 +159,12 @@ These are the questions used internally to check student understanding. Students
     * **Breakout groups for form creation.**
     * Review breakout code
 
-### Adding API Call for search
+### Adding API Call for search:
 * Show that we can use a variable to pass in breed to api call.
 * Discuss the value of making service code seperate (seperation of concerns)
 * make seperate fetchDogs method and use everywhere.
 
-### Using componentDidUpdate / Filtering for chihuahua
+### Using componentDidUpdate / Filtering for chihuahua:
 * Note the functioning of two properties in componentDidUpdate
 * Note that we can catch if state changes explicitly
 * Note that we can catch if new state is something sepecific
@@ -197,9 +199,9 @@ Class Slides : https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZm
 Here is a review of today's material.
 
 Key Terminology
-* 📝 *ComponentDidMount* - [The React.Component derived method that is triggered after a component initially mounts.](#)
-* 📝 *ComponentDidUpdate* - [The React.Component derived method that is triggered any time a component update props or state.](#)
-* 📝 *ComponentWillUnmount* - [The React.Component derived method that is triggered when a component is removed from the DOM.](#)
+* 📝 *ComponentDidMount* - [The React.Component derived method that is triggered after a component initially mounts.](https://linguinecode.com/post/understanding-react-componentdidmount)
+* 📝 *ComponentDidUpdate* - [The React.Component derived method that is triggered any time a component update props or state.](https://dev.to/cesareferrari/how-to-use-componentdidupdate-in-react-30en)
+* 📝 *ComponentWillUnmount* - [The React.Component derived method that is triggered when a component is removed from the DOM.](https://learn.co/lessons/react-component-mounting-and-unmounting)
 
 Key Concepts
-* 📝 *React Lifecycle* - [The overall flow of code execution throughout the birth, operationing and death of a React component.](#)
+* 📝 *React Lifecycle* - [The overall flow of code execution throughout the birth, operation and death of a React component.](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b)
