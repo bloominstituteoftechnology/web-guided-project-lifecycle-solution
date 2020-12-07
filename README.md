@@ -2,7 +2,7 @@
 
 ## [Training Kit](https://github.com/LambdaSchool/Full-Stack-Web-Curriculum/tree/main/03-WebApplications-II/Sprint%2001%20-%20Advanced%20React/Module%202%20-%20The%20React%20Lifecycle)
 
-### [Previous Lesson Plan] (https://github.com/LambdaSchool/Web-ComponentLifecycle-GuidedProject)
+### [Previous Lesson Plan](https://github.com/LambdaSchool/Web-ComponentLifecycle-GuidedProject)
 
 ----
 
