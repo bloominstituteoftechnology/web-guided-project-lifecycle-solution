@@ -125,6 +125,10 @@ These are the questions used internally to check student understanding. Students
 * Note ComponentDidMount does the same.
 * Add empty array to state to demonstrate this and setTimeout within componentDidMount.
 
+### Demonstrate componentDidUpdate arguments
+* Show prevProps and prevState as arguments of componentDidUpdate.
+* Show how these things change when state / props are updated.
+
 ### Highlight state setup without the constructor:
 * Show the new way of assigning state without the constructor.
 
