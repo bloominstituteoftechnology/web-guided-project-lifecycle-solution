@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
+import SearchForm from './SearchForm';
 import './styles.css';
 
 const fetchDogs = (breed) => {
@@ -15,12 +16,12 @@ const fetchDogs = (breed) => {
 class App extends React.Component {
   state = {
     doggos: [],
-    doggoText: 'husky'
+    currentBreed: 'husky'
   }
 
   componentDidMount() {
     console.log('CDM');
-    fetchDogs('husky')
+    fetchDogs(this.state.currentBreed)
       .then(resp => {
         this.setState({
           doggos: resp.data.message
@@ -32,28 +33,25 @@ class App extends React.Component {
     console.log('CDU running');
     if (prevState.doggos !== this.state.doggos) {
       console.log('doggos have changed');
-      if (this.state.doggoText === 'chihuahua') {
+      if (this.state.currentBreed === 'chihuahua') {
         console.log('ewwww its a chihuahua...');
         fetchDogs("husky")
           .then(resp => {
             this.setState({
-              doggos: resp.data.message
+              doggos: resp.data.message,
+              currentBreed: "husky"
             });
           })
         }
     }
   }
 
-  handleChanges = e => {
-    this.setState({ doggoText: e.target.value });
-  };
-
-  fetchDoggos = e => {
-    e.preventDefault();
-    fetchDogs(this.state.doggoText)
+  searchDogs = dogName => {
+    fetchDogs(dogName)
       .then(resp => {
         this.setState({
-          doggos: resp.data.message
+          doggos: resp.data.message,
+          currentBreed: dogName
         });
       })
   };
@@ -63,12 +61,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Hello Doggos</h1>
-        <input
-          type="text"
-          value={this.state.doggoText}
-          onChange={this.handleChanges}
-        />
-        <button onClick={this.fetchDoggos}>Fetch doggos</button>
+        <SearchForm searchDogs={this.searchDogs}/>
         <div className="doggos">
           {this.state.doggos.map(doggo => (
             <img width="200" src={doggo} key={doggo} alt={doggo} />
