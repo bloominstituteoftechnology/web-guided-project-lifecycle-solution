@@ -25,7 +25,7 @@ By the end of this module, learners should be able to:
 
 ## Guided Project Slack Message
 1. Clone without forking the following repo: https://github.com/LambdaSchool/web-guided-project-lifecycle
-2. Navigate into both the review and followAlong folders and run npm i to load dependences.
+2. Navigate into both the review, pokemon and doggos folders and run npm i to load dependences.
 
 :point_right: Technical issues spinning up the project? Please head over to the help channel!
 :point_right: If you fall behind during lecture and wish to catch up:
@@ -37,12 +37,15 @@ git fetch && git reset --hard origin/lecture
 ----
 
 ## Guided Project Zoom Invitation:
-Unit 3 | Sprint 1 | **Module 1: React Lifecycle**
+Unit 3 | Sprint 2 | **Module 1: React Lifecycle**
 _______________________________________________________
-Zoom Link : *insert zoom link*
-Slido: *insert slido link*
-Guided Project: https://github.com/LambdaSchool/web-guided-project-lifecycle
-Module Project: https://github.com/LambdaSchool/React-Github-User-Card
+> Zoom Link : *insert zoom link*
+>
+> Slido: *insert slido link*
+>
+> Guided Project: https://github.com/LambdaSchool/web-guided-project-lifecycle
+>
+> Module Project: https://github.com/LambdaSchool/React-Github-User-Card
 
 ----
 
