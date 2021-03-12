@@ -37,7 +37,7 @@ git fetch && git reset --hard origin/lecture
 ----
 
 ## Guided Project Zoom Invitation:
-Unit 3 | Sprint 2 | **Module 2: React Lifecycle**
+**Unit 3 | Sprint 2 | Module 2: React Lifecycle**
 _______________________________________________________
 > Zoom Link : *insert zoom link*
 >
