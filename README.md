@@ -24,28 +24,30 @@ By the end of this module, learners should be able to:
 ----
 
 ## Guided Project Slack Message
-1. Clone without forking the following repo: https://github.com/LambdaSchool/web-guided-project-lifecycle
-2. Navigate into both the review, pokemon and doggos folders and run npm i to load dependences.
-
-:point_right: Technical issues spinning up the project? Please head over to the help channel!
-:point_right: If you fall behind during lecture and wish to catch up:
-
-git fetch && git reset --hard origin/lecture
-
-:point_right: Slido event: *insert slido link*
+> **Welcome to Unit 3!**
+>
+> 1. Clone without forking the following repo: https://github.com/LambdaSchool/web-guided-project-lifecycle
+> 2. Navigate into both the review, pokemon and doggos folders and run npm i to load dependences.
+> 
+> :point_right: Technical issues spinning up the project? Please head over to the help channel!
+> :point_right: If you fall behind during lecture and wish to catch up:
+>
+> `git fetch && git reset --hard origin/lecture`
+>
+> :point_right: Slido event: https://app.sli.do/event/msea4w8q
 
 ----
 
 ## Guided Project Zoom Invitation:
-**Unit 3 | Sprint 2 | Module 2: React Lifecycle**
-_______________________________________________________
-> Zoom Link : *insert zoom link*
+> **Unit 3 | Sprint 2 | Module 2: React Lifecycle**
+> _______________________________________________________
+> Zoom Link : https://lambdaschool.zoom.us/j/3076367334
 >
-> Slido: *insert slido link*
+> Slido: https://app.sli.do/event/msea4w8q
 >
 > Guided Project: https://github.com/LambdaSchool/web-guided-project-lifecycle
 >
-> Module Project: https://github.com/LambdaSchool/React-Github-User-Card
+> Module Project: https://github.com/LambdaSchool/web-module-project-lifecycle
 
 ----
 
@@ -178,7 +180,7 @@ These are the questions used internally to check student understanding. Students
 * Make a new call if chihuahua is the state.
 
 ### Module Project Review
-* [https://github.com/LambdaSchool/React-Github-User-Card](https://github.com/LambdaSchool/React-Github-User-Card)
+* [https://github.com/LambdaSchool/web-module-project-lifecycle](https://github.com/LambdaSchool/web-module-project-lifecycle)
 
 ## Breakout Slack Messages
 Form Construction Breakout Instructions:
@@ -197,10 +199,10 @@ You have 10mins to complete this task. Good luck!
 
 ## After Class Message
 Hope you all enjoyed today's guided Lesson!
-A reminder if that office hours are from 2:30 - 3:30 Lambda Time. Don't forget to complete the days Check for Understanding and Pulse Checks!
+A reminder if that office hours are from 2:30 - 3:00 Lambda Time. Don't forget to complete the days Check for Understanding and Pulse Checks!
 
 Module Project
-Class Component React Github User Card : https://github.com/LambdaSchool/React-Github-User-Card)
+Class Module Project : https://github.com/LambdaSchool/web-module-project-lifecycle
 Class Slides : https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing
 
 Here is a review of today's material.
