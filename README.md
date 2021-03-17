@@ -30,6 +30,7 @@ By the end of this module, learners should be able to:
 > 2. Navigate into both the review, pokemon and doggos folders and run npm i to load dependences.
 > 
 > :point_right: Technical issues spinning up the project? Please head over to the help channel!
+>
 > :point_right: If you fall behind during lecture and wish to catch up:
 >
 > `git fetch && git reset --hard origin/lecture`
@@ -201,16 +202,16 @@ You have 10mins to complete this task. Good luck!
 Hope you all enjoyed today's guided Lesson!
 A reminder if that office hours are from 2:30 - 3:00 Lambda Time. Don't forget to complete the days Check for Understanding and Pulse Checks!
 
-Module Project
+Module Project:
 Class Module Project : https://github.com/LambdaSchool/web-module-project-lifecycle
 Class Slides : https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing
 
 Here is a review of today's material.
 
-Key Terminology
+Key Terminology:
 * 📝 *ComponentDidMount* - [The React.Component derived method that is triggered after a component initially mounts.](https://linguinecode.com/post/understanding-react-componentdidmount)
 * 📝 *ComponentDidUpdate* - [The React.Component derived method that is triggered any time a component update props or state.](https://dev.to/cesareferrari/how-to-use-componentdidupdate-in-react-30en)
 * 📝 *ComponentWillUnmount* - [The React.Component derived method that is triggered when a component is removed from the DOM.](https://learn.co/lessons/react-component-mounting-and-unmounting)
 
-Key Concepts
+Key Concepts:
 * 📝 *React Lifecycle* - [The overall flow of code execution throughout the birth, operation and death of a React component.](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b)
