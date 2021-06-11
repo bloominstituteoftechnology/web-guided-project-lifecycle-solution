@@ -219,3 +219,6 @@ Alternative Lecture Video: [Dustin Myers](https://youtu.be/HrsVoggrK1Y) | [Josh 
 
 ### Key Concepts:
 * 📝 *React Lifecycle* - [The overall flow of code execution throughout the birth, operation and death of a React component.](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b)
+
+### Stretch Tutorial
+* [Head-to-Toe Class based Component Tutorial](https://medium.com/bb-tutorials-and-thoughts/react-understanding-component-lifecycle-methods-1aaa32b33047)
