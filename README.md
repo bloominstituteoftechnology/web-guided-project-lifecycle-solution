@@ -24,8 +24,8 @@ By the end of this module, learners should be able to:
 ----
 
 ## Guided Project Slack Message
-> **Welcome to Unit 3!**
->
+> **Day 2 of Class Based Components Begins Today!**
+> Setup instructions as follows…
 > 1. Clone without forking the following repo: https://github.com/BloomInstituteOfTechnology/web-guided-project-lifecycle
 > 2. Navigate into both the review, pokemon and doggos folders and run npm i to load dependences.
 > 
