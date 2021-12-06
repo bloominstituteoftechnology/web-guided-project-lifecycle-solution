@@ -208,7 +208,6 @@ You have 10mins to complete this task. Good luck!
 ### Module Materials
 Module Project : https://github.com/BloomInstituteOfTechnology/web-module-project-lifecycle
 GP Slides : https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing
-Yesterday's Module Project Review: https://www.loom.com/share/f856074dad7b4b75af2c8463f7bd8fab PW: eX51kj
 Alternative Lecture Video: [Dustin Myers](https://youtu.be/HrsVoggrK1Y) | [Josh Jacobson](https://youtu.be/YGPOda5hPm0) | [Warren C. Longmire](https://youtu.be/jsXK-X97h-k) | [Brian Kirkby](https://youtu.be/SFlIfG-WfjI)
 
 
